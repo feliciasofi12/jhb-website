@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PT Jasa Harapan Bersama – Konsultan Pajak & Akuntansi Profesional</title>
+  <meta name="description" content="PT Jasa Harapan Bersama (JHB) adalah perusahaan konsultan pajak, akuntansi, dan audit yang beroperasi di Medan dan Jakarta.">
+  <!-- Bootstrap & AOS (animasi scroll) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-navy fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Jasa Harapan Bersama</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="about.html">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Layanan</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Slider -->
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" style="position:relative;">
+    <div class="carousel-inner">
+      <div class="carousel-item active hero-slide" style="background-image: url('assets/images/hero1.jpg');"></div>
+      <div class="carousel-item hero-slide" style="background-image: url('assets/images/hero2.jpg');"></div>
+      <div class="carousel-item hero-slide" style="background-image: url('assets/images/hero3.jpg');"></div>
+    </div>
+
+    <!-- Overlay content centered -->
+    <div class="hero-overlay text-center text-white d-flex flex-column justify-content-center align-items-center px-3">
+      <h1 class="fw-bold mb-3 display-5" data-aos="fade-up">Solusi Pajak & Akuntansi Terpercaya</h1>
+      <p class="lead mb-4 max-700" data-aos="fade-up" data-aos-delay="150">
+        Mendukung bisnis Anda dengan kepatuhan dan strategi keuangan profesional — hadir di Medan & Jakarta.
+      </p>
+      <div data-aos="fade-up" data-aos-delay="300">
+        <a href="services.html" class="btn btn-light btn-lg me-2">Lihat Layanan</a>
+        <a href="contact.html" class="btn btn-outline-light btn-lg">Hubungi Kami</a>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Sebelumnya">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Berikutnya">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+  </div>
+
+  <!-- Tentang singkat -->
+  <section class="py-5 bg-light" data-aos="fade-up">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-3">Mengapa Memilih PT Jasa Harapan Bersama</h2>
+      <p class="text-muted mx-auto" style="max-width:900px;">
+        Kami berpengalaman dalam perpajakan, akuntansi, dan audit. Tim kami siap membantu bisnis Anda tumbuh melalui tata kelola keuangan dan kepatuhan pajak yang baik.
+      </p>
+    </div>
+  </section>
+
+  <!-- Layanan ringkas -->
+  <section class="py-5" data-aos="fade-up">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Layanan Kami</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card service-card h-100 text-center p-4">
+            <img src="assets/images/icon-tax.svg" alt="Pajak" class="icon mb-3">
+            <h5>Konsultasi Pajak</h5>
+            <p>Mendampingi pelaporan, perencanaan, dan pendampingan pemeriksaan pajak.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card service-card h-100 text-center p-4">
+            <img src="assets/images/icon-accounting.svg" alt="Akuntansi" class="icon mb-3">
+            <h5>Jasa Akuntansi</h5>
+            <p>Pencatatan transaksi dan penyusunan laporan keuangan yang dapat diandalkan.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card service-card h-100 text-center p-4">
+            <img src="assets/images/icon-audit.svg" alt="Audit" class="icon mb-3">
+            <h5>Audit & Review</h5>
+            <p>Audit internal, review kepatuhan, dan evaluasi risiko laporan keuangan.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Profil lokal (MP4) -->
+  <section class="py-5 bg-light text-center" data-aos="fade-up">
+    <div class="container">
+      <h2 class="fw-bold mb-4">Video Profil Perusahaan</h2>
+      <div class="ratio ratio-16x9 shadow rounded overflow-hidden">
+        <!-- Taruh file MP4 di assets/videos/profile.mp4 -->
+        <video id="companyVideo" controls playsinline preload="metadata" style="width:100%;height:100%;object-fit:cover;">
+          <source src="assets/videos/profile.mp4" type="video/mp4">
+          Browser Anda tidak mendukung pemutaran video.
+        </video>
+      </div>
+      <p class="text-muted small mt-2">Tip: gunakan MP4 terkompres (H.264). Jika file besar, pertimbangkan hosting video eksternal.</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-5 text-center" data-aos="fade-up">
+    <div class="container">
+      <h3 class="mb-3">Butuh konsultasi pajak atau audit?</h3>
+      <p class="mb-4 text-muted">Hubungi tim kami di Medan atau Jakarta untuk diskusi awal gratis.</p>
+      <a href="contact.html" class="btn btn-navy btn-lg">Hubungi Kami</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-navy text-white text-center py-3">
+    <small>&copy; <span id="year"></span> PT Jasa Harapan Bersama. All rights reserved.</small>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    AOS.init({ duration: 900, once: true });
+
+    // Improve mobile video UX: pause carousel while playing video
+    const heroCarouselEl = document.getElementById('heroCarousel');
+    const companyVideo = document.getElementById('companyVideo');
+    if (companyVideo && heroCarouselEl) {
+      companyVideo.addEventListener('play', () => {
+        // stop carousel auto sliding while video plays
+        const carousel = bootstrap.Carousel.getInstance(heroCarouselEl) || new bootstrap.Carousel(heroCarouselEl, { interval: false });
+        carousel.pause();
+      });
+      companyVideo.addEventListener('pause', () => {
+        const carousel = bootstrap.Carousel.getInstance(heroCarouselEl);
+        if (carousel) carousel.cycle();
+      });
+    }
+  </script>
+</body>
+</html>
